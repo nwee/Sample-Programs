@@ -1,6 +1,14 @@
 COMP 3411 Artificial Intelligence, Session 1, 2013.
 
-For this project you will be implementing an agent to play a simple text-based adventure game. The agent is required to move around a rectangular environment, collecting tools and avoiding (or removing) obstacles along the way. The obstacles and tools within the environment are represented as follows:
+Adventure Game
+---------------
+
+This project is the implementation of an agent to play a simple text-based adventure game. 
+
+Rules
+-----
+
+The agent is required to move around a rectangular environment, collecting tools and avoiding (or removing) obstacles along the way. The obstacles and tools within the environment are represented as follows:
 
 Obstacles  Tools
 T 	tree      	a 	axe
@@ -22,14 +30,6 @@ When the agent moves to a location occupied by a tool, it automatically picks up
 
 To win the game, the agent must pick up the gold and then return to its initial location.
 
-Running as a Single Process
-
-Copy the archive src.zip into your own filespace and unzip it. Then type
-
-cd src
-javac *.java
-java Rogue -i s0.in
-You should then see something like this:
 ~~~~~~~~~~~~~~~~~~~~~
 ~~~~~~~~~~~~~~~~~~~~~
 ~~     T     T   k ~~
@@ -41,64 +41,6 @@ You should then see something like this:
 ~~~~~~~~~~~~~~~~~~~~~
 ~~~~~~~~~~~~~~~~~~~~~
 
-Enter Action(s): 
-This allows you to play the role of the agent by typing commands at the keyboard (followed by <Enter>). Note:
-a key can be used to open any door; once a door is opened, it has effectively been removed from the environment and can never be "closed" again.
-an axe or key can be used multiple times, but each dynamite can be used only once.
-C, O or B instructions will fail (have no effect) if the appropriate tool is not held, or if the location immediately in front of the agent does not contain an appropriate obstacle.
-Running in Network Mode
-
-Follow these instructions to see how the game runs in network mode:
-
-open two windows, and cd to the src directory in both of them.
-choose a port number between 1025 and 65535 - let's suppose you choose 31415.
-type this in one window:
-java Rogue -p 31415 -i s0.in
-type this in the other window:
-java Agent -p 31415
-In network mode, the agent runs as a separate process and communicates with the game engine through a TCPIP socket. Notice that the agent cannot see the whole environment, but only a 5-by-5 "window" around its current location, appropriately rotated. We have also provided a C version of the agent, which you can run by typing
-make
-./agent -p 31415
-Writing an Agent
-
 At each time step, the environment will send a series of 24 characters to the agent, constituting a scan of the 5-by-5 window it is currently seeing; the agent must send back a single character to indicate the action it has chosen.
 
-You are free to write the agent in any language you choose. If you are writing in Java, your main file should be called Agent.java (you are free to use the supplied file Agent.java as a starting point). If you are writing in C, you are free to use the files agent.c, pipe.c and pipe.h as a starting point. In other languages, you will have to write the socket code for yourself. You must include a Makefile with your submission, producing an executable called agent.
-
-You may assume that the environment is no larger than 80 by 80, and that it is totally surrounded by water, so there is no confusion about where the environment begins and ends.
-
-Additional examples of input and output files will be provided in the directory hw3/sample.
-
-Question
-
-At the top of your code, in a block of comments, you must provide a brief answer (one or two paragraphs) to this Question:
-
-Briefly describe how your program works, including any algorithms and data structures employed, and explain any design decisions you made along the way.
-Groups
-
-This assignment may be done individually, or in groups of two students. Each group should send an email to blair@cse by Sunday 19 May, indicating the names of the group members (or just your own name, if you intend to do the project individually).
-Submission
-
-When submissions are open, you should submit by typing
-give cs3411 hw3 Makefile ...
-You can submit as many times as you like - later submissions will overwrite earlier ones. You can check that your submission has been received by using the following command:
-3411 classrun -check
-
-The submission deadline is Sunday 2 June, 11:59 pm.
-15% penalty will be applied to the (maximum) mark for every 24 hours late after the deadline.
-
-Additional information may be found in the FAQ and will be considered as part of the specification for the project.
-
-Questions relating to the project can also be posted to the MessageBoard on the course Web page.
-
-If you have a question that has not already been answered on the FAQ or the MessageBoard, you can email it to your tutor, or to cs3411.hw3@cse.unsw.edu.au
-
-Please ensure that you submit the source files and NOT any binary files. The give system will compile your program using your Makefile and check that it produces a binary file (or java class files) with the correct name.
-
-Assessment
-
-Your program will be tested on a series of sample inputs with successively more challenging environments. There will be:
-
-8 marks for functionality (automarking)
-4 marks for Algorithms, Style, Comments and answer to the Question
-You should always adhere to good coding practices and style. In general, a program that attempts a substantial part of the job but does that part correctly will receive more marks than one attempting to do the entire job but with many errors.
+The environment is no larger than 80 by 80, and that it is totally surrounded by water, so there is no confusion about where the environment begins and ends.
