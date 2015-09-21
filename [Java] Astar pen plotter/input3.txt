@@ -1,0 +1,9 @@
+Line between 4 1 and 4 4      
+Line between 4 4 and 4 7    
+Line between 2 6 and 4 4    
+Line between 4 4 and 6 2    
+Line between 6 6 and 4 4    
+Line between 2 2 and 4 4 
+Line between 3 1 and 6 4      
+Line between 5 4 and 3 7    
+Line between 7 6 and 5 4 

@@ -1,0 +1,8 @@
+Line between 2 0 and 8 0
+Line between 4 0 and 4 2
+Line between 4 2 and 6 2
+Line between 6 0 and 6 2
+Line between 6 4 and 6 6
+Line between 6 6 and 8 6
+Line between 8 4 and 8 6
+Line between 7 6 and 7 8

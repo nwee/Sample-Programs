@@ -1,0 +1,12 @@
+11 nodes expanded
+cost = 34.07
+Move from 0 0 to 3 1
+Draw from 3 1 to 6 4
+Move from 6 4 to 7 2
+Draw from 7 2 to 9 4
+Draw from 9 4 to 2 6
+Move from 2 6 to 3 7
+Draw from 3 7 to 5 4
+Draw from 5 4 to 7 6
+Move from 7 6 to 7 4
+Draw from 7 4 to 3 2
