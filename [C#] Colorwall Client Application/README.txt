@@ -3,6 +3,8 @@ Colorwall Client Application
 
 This program was created during my internship in S1T2. 
 
+This script was used in conjunction with the Unity Game Engine to run the project.
+
 The purpose of the program was to receive signal input from the SICK TIM5xx Laser device when a ball is thrown past, and respond with a visual indicator at the detected coordinate. The visual indicator would be in the form of a temporary color explosion animation with text overlayed from user tweets or a tablet input. 
 
 The background features multiple pictures that change over time with new pictures sent via tweets or from a database.
