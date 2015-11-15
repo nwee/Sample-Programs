@@ -1,0 +1,107 @@
+/*
+ * written by andrewt@cse.unsw.edu.au September 2015
+ * as a starting point for COMP2041/9041 assignment 2
+ * http://cgi.cse.unsw.edu.au/~cs2041/assignments/bitter/
+ *
+ * Change (or replace) the CSS below to create you own look-and-feel
+ *
+ * You will probably want to add  CSS to this file too
+ */
+
+.bitter_heading {
+    padding-top: 1em;
+    padding-bottom: 1em;
+    text-align: center;
+    font-size: x-large;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.bitter_user_details {
+    background-color: #ABCDEF;
+    color: #204142;
+    white-space: pre;
+    border:thin solid #204142;
+    border-radius: 1em;
+    padding-left: 0.42em;
+}
+
+.bitter_button {
+    background-color: #FEDBCA;
+    border:thin solid #904142;
+    border-radius: 0.42em;
+    color: #904142;
+}
+
+.border { 
+	border-radius: 0.42em;
+    border:1px solid #904142;
+    /*border-spacing: 15px; */
+    margin-left:auto; 
+    margin-right:auto;
+    vertical-align: top;   
+}
+
+.controlBar {
+	margin: 0px;
+	padding: 0px;
+    border:1px solid #904142;
+    width: 100%;
+  	background-color: #E6E6E6
+}
+
+/*Style settings for profile page*/
+.profile_table {
+   	border: 1px solid black;
+	border-radius: 0.42em;
+    border-spacing: 15px;
+    margin-left:auto; 
+    margin-right:auto; 
+}
+.profile_table td, profile_table th {
+    padding: 30px;
+    border-collapse: collapse;
+    border-style: hidden;
+    vertical-align: top;
+}
+.profile_cell_img{ 
+   	padding: 30px;
+   	max-width: 250px;
+    vertical-align: middle;
+    text-align: center
+    border-style: solid;
+    border:thin solid black;
+    border-radius: 2em;
+    border-spacing: 15px;
+    background-color: #FAFAFA   
+}
+.profile_info {
+   	max-width: 310px;
+    background-color: #ABCDEF;
+    color: #204142;
+    border:thin solid #204142;
+    border-radius: 1em;
+    padding-left: 0.42em;
+    vertical-align: top;
+}
+
+.search_table {
+   	border: 1px solid black;
+	border-radius: 0.42em;
+    border-spacing: 15px;
+    width: 100%
+    margin-left:auto; 
+    margin-right:auto; 
+}
+.search_table td, profile_table th {
+    border-collapse: collapse;
+    border-style: hidden;
+    vertical-align: top;
+}
+
+/*Style settings for image-buttons*/
+.img_button {
+    padding-top: 0.30em;
+    background:none;
+    border: 0;
+}
